@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url(/Public/contenido/img/Main/fondoPagina.jpg);
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+button{
+    width: 900px;
+    height: 900px;
+    font-size: 100px;
+}
+
+iframe {
+    width: 98vw; /* 100% del ancho del viewport */
+    height: 100vh; /* 100% de la altura del viewport */
+    border: none; /* Quitamos el borde del iframe */
+}
