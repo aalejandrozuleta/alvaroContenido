@@ -1,69 +1,73 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-image: url(/Public/contenido/img/Main/fondoPagina.jpg);
-    }
+}
 
-    
 
-    body{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 100%;
-        
-    }
-    
 
-    
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
 
-    h1 {
-        font-size: 350px;
-        color: white;
-        text-align: center;
-        margin-bottom: 1%;
-    }
-    
+}
 
-    .main-scroll-div{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        /* border: 2px solid red; */
-    }
-    .cover{
-        position: relative;
+
+
+
+h1 {
+    font-size: 100px;
+    color: white;
+    margin-left: 60px;
+    margin-bottom: 1%;
+}
+
+
+
+.main-scroll-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+.cover {
+    position: relative;
     width: 100%;
     height: 60%;
     display: flex;
     align-items: center;
-    }
-    .cover::before{
+}
+
+.cover::before {
     position: absolute;
     content: "";
     left: 0px;
-    top: -13px;
+    top: -2px;
     z-index: 99;
-    height: 98%;
-    width: 150px;
-    background-image: linear-gradient(90deg,black,transparent);
+    height: 97%;
+    width: 100px;
+    background-image: linear-gradient(90deg, black, transparent);
 }
-    .cover::after{
+
+.cover::after {
     position: absolute;
     content: "";
     right: 0px;
-    top: -13px;
+    top: -2px;
     z-index: 99;
-    height: 98%;
-    width: 150px;
-    background-image: linear-gradient(-90deg,black,transparent);
+    height: 97%;
+    width: 100px;
+    background-image: linear-gradient(-90deg, black, transparent);
 
-    }
-    .scroll-images{
+}
+
+.scroll-images {
     width: 100%;
     height: auto;
     display: flex;
@@ -72,55 +76,86 @@
     overflow: auto;
     position: relative;
     scroll-behavior: smooth;
-    }
-    .child{
-        min-width: 22%;
-        height: 100%;
-        margin: 0px 85px;
-        border-radius: 1%;
-        cursor: pointer;
-        border: 1px solid white;
-        box-shadow: 0px 0px 50px white;
-        overflow: hidden;
-    }
-    
-    .scroll-images::-webkit-scrollbar {
-    -webkit-appearance:none;
-    }
-    .child-img{
-        width: 100%;
-        height: 100%;
-    }
-    .iconob{
-        border: none;
-        width: 240px;
-        height: 210px;
-        cursor: pointer;
-        border-radius: 50%;
-        margin-right: 30px;
-    }
-    .iconoi{
-        width: 240px;
-        height: 210px;
-        cursor: pointer;
-        border-radius: 50%;
-        margin-right: 30px;
-        background-color: rgb(255, 255, 255);
-    }
-    
-    .iconoi:hover{
-        background-color: rgb(255, 254, 254);
-        box-shadow: 5px 5px 100px white;
-    }
-    .iconod{
-        width: 240px;
-        height: 210px;
-        cursor: pointer;
-        border-radius: 50%;
-        margin-left: 30px;
-        }
-        
-    .iconod:hover{
-        background-color: #fff;
-        box-shadow: 5px 5px 100px white;
-    }
+}
+
+.child {
+    position: relative;
+    min-width: 20%;
+    height: 75%;
+    margin: 0px 20px;
+    border-radius: 1%;
+    cursor: pointer;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px white;
+    overflow: hidden;
+}
+
+.scroll-images::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.child-img {
+    width: 100%;
+    height: 100%;
+}
+
+.iconob {
+    border: none;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 0px;
+}
+
+.iconoi {
+    width: 60px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 0px;
+
+}
+
+.iconoi:hover {
+    background-color: rgb(255, 254, 254);
+    box-shadow: 0px 0px 20px white;
+}
+
+.iconod {
+    width: 60px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+.iconod:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px white;
+}
+
+
+/*hover*/
+
+
+.child:hover figcaption {
+    display: block;
+}
+
+figcaption {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 20px;
+    font: 15px/30px verdana;
+    color: white;
+    flex-direction: column;
+}
+
