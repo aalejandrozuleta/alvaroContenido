@@ -24,7 +24,7 @@
                 </ul>
             </nav>
 
-            <input id="buscador" type="text" placeholder="Buscar" />
+            <input id="buscador" type="text" placeholder="Buscar" onkeyup="buscarPeliculas()" />
             <img
                 id="loupe"
                 src="../Public/contenido/img/Logos/loupe.png"
@@ -395,6 +395,14 @@
                 </section>
             </div>
         </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <div id="modalContent" class="modal-columns"></div>
+            </div>
+        </div>
+
         <footer>
             <article>
                 <p>&copy CODE_DRAGON</p>
@@ -408,3 +416,4 @@
     </body>
 </html>
 <script src="../Public/js/scroll.js"></script>
+<script src="../Public/js/buscador.js"></script>
