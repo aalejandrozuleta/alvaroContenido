@@ -1,0 +1,37 @@
+const sliderContainer = document.querySelector('.slider-container');
+let sliderIndex = 0;
+let sliderInterval;
+
+function startSlider() {
+  sliderContainer.style.width = `${sliderContainer.children.length * 100}%`;
+
+  sliderInterval = setInterval(() => {
+    sliderIndex++;
+    if (sliderIndex >= sliderContainer.children.length) {
+      sliderIndex = 0;
+    }
+    sliderContainer.style.transform = `translateX(-${sliderIndex * 100 / sliderContainer.children.length}%)`;
+  }, 2000); 
+}
+startSlider();
+
+//*
+
+const pelis = document.querySelector(".pelis");
+const images = pelis.querySelectorAll(".imageDrama");
+let currentIndex = 0;
+
+function scrollIzquierda() {
+    currentIndex = (currentIndex - 2 + images.length) % images.length;
+    updateSlider();
+}
+
+function scrollDerecha() {
+    currentIndex = (currentIndex + 2) % images.length;
+    updateSlider();
+}
+
+function updateSlider() {
+    const translateValue = -currentIndex * 9.66;
+    pelis.style.transform = `translateX(${translateValue}%)`;
+}
