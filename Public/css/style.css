@@ -457,6 +457,18 @@ footer {
     display: none;
 }
 
+@media screen and (max-width: 767px) {
+    .modal {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .modal-content {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
 /* .modal-columns .imageDrama:hover .botones  {
     display: grid;
     grid-template-rows: repeat(2,50%);
