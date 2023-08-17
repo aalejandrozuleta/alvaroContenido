@@ -443,7 +443,7 @@ footer {
 .modal-columns {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: 20px;
     align-items: center;
 }
