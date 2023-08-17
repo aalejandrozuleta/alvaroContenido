@@ -467,6 +467,17 @@ footer {
         width: 100vw;
         height: 100vh;
     }
+
+    .imageDrama {
+        width: 50%;
+        height: auto;
+        margin: 20px;
+    }
+
+  .imageDrama img{
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /* .modal-columns .imageDrama:hover .botones  {
