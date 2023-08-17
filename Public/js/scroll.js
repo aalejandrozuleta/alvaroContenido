@@ -1,6 +1,6 @@
 // Define the updateSlider function
 function updateSlider(container, currentIndex) {
-    const translateValue = -currentIndex * 9.66;
+    const translateValue = -currentIndex * 9.2;
     container.style.transform = `translateX(${translateValue}%)`;
 }
 
@@ -9,12 +9,12 @@ const dramaImages = document.querySelectorAll("#imageDramaContainer .imageDrama"
 let dramaCurrentIndex = 0;
 
 function scrollIzquierdaDrama() {
-    dramaCurrentIndex = (dramaCurrentIndex - 2 + dramaImages.length) % dramaImages.length;
+    dramaCurrentIndex = (dramaCurrentIndex - 1 + dramaImages.length) % dramaImages.length;
     updateSlider(document.getElementById('imageDramaContainer'), dramaCurrentIndex);
 }
 
 function scrollDerechaDrama() {
-    dramaCurrentIndex = (dramaCurrentIndex + 2) % dramaImages.length;
+    dramaCurrentIndex = (dramaCurrentIndex + 1) % dramaImages.length;
     updateSlider(document.getElementById('imageDramaContainer'), dramaCurrentIndex);
 }
 
@@ -23,12 +23,12 @@ const comediaImages = document.querySelectorAll("#imageComediaContainer .imageDr
 let comediaCurrentIndex = 0;
 
 function scrollIzquierdaComedia() {
-    comediaCurrentIndex = (comediaCurrentIndex - 2 + comediaImages.length) % comediaImages.length;
+    comediaCurrentIndex = (comediaCurrentIndex - 1 + comediaImages.length) % comediaImages.length;
     updateSlider(document.getElementById('imageComediaContainer'), comediaCurrentIndex);
 }
 
 function scrollDerechaComedia() {
-    comediaCurrentIndex = (comediaCurrentIndex + 2) % comediaImages.length;
+    comediaCurrentIndex = (comediaCurrentIndex + 1) % comediaImages.length;
     updateSlider(document.getElementById('imageComediaContainer'), comediaCurrentIndex);
 }
 
@@ -37,12 +37,12 @@ const animacionImages = document.querySelectorAll("#imageAnimacionContainer .ima
 let animacionCurrentIndex = 0;
 
 function scrollIzquierdaAnimacion() {
-    animacionCurrentIndex = (animacionCurrentIndex - 2 + animacionImages.length) % animacionImages.length;
+    animacionCurrentIndex = (animacionCurrentIndex - 1 + animacionImages.length) % animacionImages.length;
     updateSlider(document.getElementById('imageAnimacionContainer'), animacionCurrentIndex);
 }
 
 function scrollDerechaAnimacion() {
-    animacionCurrentIndex = (animacionCurrentIndex + 2) % animacionImages.length;
+    animacionCurrentIndex = (animacionCurrentIndex + 1) % animacionImages.length;
     updateSlider(document.getElementById('imageAnimacionContainer'), animacionCurrentIndex);
 }
 
