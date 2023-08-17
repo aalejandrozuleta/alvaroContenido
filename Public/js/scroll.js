@@ -1,10 +1,10 @@
-// Define the updateSlider function
+
 function updateSlider(container, currentIndex) {
     const translateValue = -currentIndex * 9.66;
     container.style.transform = `translateX(${translateValue}%)`;
 }
 
-// Drama section
+
 const dramaImages = document.querySelectorAll("#imageDramaContainer .imageDrama");
 let dramaCurrentIndex = 0;
 
@@ -18,7 +18,7 @@ function scrollDerechaDrama() {
     updateSlider(document.getElementById('imageDramaContainer'), dramaCurrentIndex);
 }
 
-// Comedia section
+
 const comediaImages = document.querySelectorAll("#imageComediaContainer .imageDrama");
 let comediaCurrentIndex = 0;
 
@@ -32,7 +32,7 @@ function scrollDerechaComedia() {
     updateSlider(document.getElementById('imageComediaContainer'), comediaCurrentIndex);
 }
 
-// Animación section
+
 const animacionImages = document.querySelectorAll("#imageAnimacionContainer .imageDrama");
 let animacionCurrentIndex = 0;
 
@@ -46,7 +46,7 @@ function scrollDerechaAnimacion() {
     updateSlider(document.getElementById('imageAnimacionContainer'), animacionCurrentIndex);
 }
 
-// Repeat the same structure for other genre sections if needed
 
 
-// Repeat the same structure for other genres
+
+
