@@ -8,11 +8,13 @@
         <title>start voyage</title>
     </head>
     <body>
-        <header>
+        <header id="navDefault">
             <nav class="principalNav">
                 <ul class="menu">
                     <li><a href="../../index.html">Inicio</a></li>
-                    <li><a href="peliculas.html">Películas</a></li>
+                    <li>
+                        <a href="views/peliculas/peliculas.html">Películas</a>
+                    </li>
                     <li><a href="../series.html">Series</a></li>
                     <li>
                         <a href="#">Géneros</a>
@@ -25,21 +27,67 @@
                 </ul>
             </nav>
 
-            <input id="buscador" type="text" placeholder="Buscar" onkeyup="buscarPeliculas()" />
-
+            <input id="buscador" type="text" placeholder="Buscar" />
             <img
                 id="loupe"
-                src="../../Public/contenido/img/Logos/loupe.png"
+                src="Public/contenido/img/Logos/loupe.png"
                 alt="loupe"
             />
 
+            <img
+                id="logo"
+                src="Public/contenido/img/Logos/logoEmpresa.png"
+                alt="logo"
+            />
+        </header>
 
+        <header id="hamburguesa">
+            <button id="btnBurguer">
                 <img
-                    id="logo"
-                    src="../../Public/contenido/img/Logos/logoEmpresa.png"
-                    alt="logo"
+                    id="imgHamburguesa"
+                    src="../../Public/contenido/img/Main/menu-hamburguesa.png"
+                    alt=""
                 />
-
+                <img
+                    id="imgClose"
+                    src="../../Public/contenido/img/Main/x.png"
+                    alt=""
+                />
+            </button>
+            <nav id="navBurguer">
+                <ul class="menuBurguer">
+                    <li>
+                        <a href="../../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="peliculas.html">películas</a>
+                    </li>
+                    <li>
+                        <a href="../series.html">series</a>
+                    </li>
+                    <li>
+                        <a href="#">géneros</a>
+                        <ul class="submenuHamburguer">
+                            <li>
+                                <a href="#animacion">Animación</a>
+                            </li>
+                            <li>
+                                <a href="#comedia">comedia</a>
+                            </li>
+                            <li>
+                                <a href="#drama">Drama</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="infoCompany">
+                    <input
+                        id="buscadorBurguer"
+                        type="text"
+                        placeholder="Buscar"
+                    />
+                </div>
+            </nav>
         </header>
         <div class="container" id="drama">
             <div class="scroll-images">
@@ -432,6 +480,8 @@
         </footer>
     </body>
 </html>
+<script src="../../Public/js/hamburguer.js"></script>
+<script src="../../Public/js/style.js"></script>
 <script src="../../Public/js/scroll.js"></script>
 <script src="../../Public/js/buscador.js"></script>
 <script src="../../Public/js/modal.js"></script>

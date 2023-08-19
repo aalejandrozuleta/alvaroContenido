@@ -35,3 +35,6 @@ function updateSlider() {
     const translateValue = -currentIndex * 9.66;
     pelis.style.transform = `translateX(${translateValue}%)`;
 }
+
+
+
