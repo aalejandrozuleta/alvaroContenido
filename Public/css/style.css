@@ -106,7 +106,7 @@ body {
 
     .hamburguesaActive {
         background-color: rgba(48, 48, 48, 0.589);
-        height: 85vh !important;
+        height: 100vh !important;
         display: grid !important;
         grid-template-rows: 10% 90% !important;
         z-index: 999 !important;
