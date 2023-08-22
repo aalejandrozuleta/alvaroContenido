@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../Public/css/normalize.css">
+        <link rel="stylesheet" href="../../Public/css/style.css" />
+        <link rel="shortcut icon" href="Public/contenido/img/Logos/logoEmpresa.png" type="image/x-icon">
+        <title>Star Voyage Peliculas</title>
+    </head>
+    <body>
+        <header id="navDefault">
+            <nav class="principalNav">
+                <ul class="menu">
+                    <li>
+                        <a href="/peliculas.html">Películas</a>
+                    </li>
+                    <li><a href="/series.html">Series</a></li>
+                    <li>
+                        <a href="#">Géneros</a>
+                        <ul class="submenu">
+                            <li><a href="#animacion">Animación</a></li>
+                            <li><a href="#comedia">Comedia</a></li>
+                            <li><a href="#drama">Drama</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="/index.html">
+                <img
+                id="logo"
+                src="Public/img/principales/principal.png"
+                alt="logo"
+            /> </a>
+            
+        </header>
+
+        <header id="hamburguesa">
+            <button id="btnBurguer">
+                <img
+                    id="imgHamburguesa"
+                    src="Public/img/principales/menu.png"
+                    alt=""
+                />
+                <img
+                    id="imgClose"
+                    src="Public/img/principales/remove.png"
+                    alt=""
+                />
+            </button>
+            <nav id="navBurguer">
+                <ul class="menuBurguer">
+                    <li>
+                        <a href="/peliculas.html">películas</a>
+                    </li>
+                    <li>
+                        <a href="/series.html">series</a>
+                    </li>
+                    <li>
+                        <a href="#">géneros</a>
+                        <ul class="submenuHamburguer">
+                            <li>
+                                <a href="#animacion">Animación</a>
+                            </li>
+                            <li>
+                                <a href="#comedia">comedia</a>
+                            </li>
+                            <li>
+                                <a href="#drama">Drama</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="infoCompany">
+                    <input
+                        id="buscadorBurguer"
+                        type="text"
+                        placeholder="Buscar"
+                    />
+                </div>
+            </nav>
+        </header>
+        <div class="container" id="animacion">
+            <div class="scroll-images">
+                <div class="titleContainer">
+                    <h2>Animacion</h2>
+                </div>
+
+                <section class="genero">
+                    <div class="btnFlecha flechaIzquierda">
+                        <button class="iconob flechabtn" onclick="scrollIzquierdaDrama()">
+                            <img class="iconoi" src="Public/img/principales/izq.png" alt="" />
+                        </button>
+                    </div>
+                    <div class="pelis" id="imageDramaContainer">
+                        <figure class="imageDrama">
+                            <img
+                                src="Public/img/caratulas/peliculas/animacion/pussInBoots.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>Puss in Boots</h3>
+                                <div class="modalPrincipal">
+                                    <div class="botones">
+                                        <button class="ver">Ver</button>
+                                        <button class="verTrailer">
+                                            Ver Trailer
+                                        </button>
+                                        <div class="video-container">
+                                            <span class="close">X</span>
+                                            <video src="../../Public/contenido/trailers/Peliculas/theWhale.mp4" controls></video>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </figure>
+                        <figure class="imageDrama">
+                            <img
+                                src="Public/img/caratulas/peliculas/animacion/spiderManAcross.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>Spiderman-AcrossTheSpiderverse</h3>
+                                <div class="modalPrincipal">
+                                    <div class="botones">
+                                        <button class="ver">Ver</button>
+                                        <button class="verTrailer">
+                                            Ver Trailer
+                                        </button>
+                                        <div class="video-container">
+                                            <span class="close">X</span>
+                                            <video src="../../Public/contenido/trailers/Peliculas/theWhale.mp4" controls></video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="imageDrama">
+                            <img
+                                src="Public/img/caratulas/peliculas/animacion/spiderManInto.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>Spiderman-IntoTheSpiderverse</h3>
+                                
+                                <div class="botones">
+                                    <button class="ver">Ver</button>
+                                    <button class="verTrailer">
+                                        Ver Trailer
+                                    </button>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="imageDrama">
+                            <img
+                                src="Public/img/caratulas/peliculas/animacion/badGuys.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>Thebadguys</h3>
+                                <div class="botones">
+                                    <button class="verTrailer">
+                                        Ver Trailer
+                                    </button>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="imageDrama">
+                            <img
+                                src="Public/img/caratulas/peliculas/animacion/bookOfLife.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>The book of life</h3>
+                                <div class="botones">
+                                    <button class="verTrailer">
+                                        Ver Trailer
+                                    </button>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="btnFlecha flechaDerecha">
+                        <button class="iconob flechabtn" onclick="scrollDerechaDrama()">
+                            <img class="iconoi" src="Public/img/principales/der.png" alt="" />
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="container" id="comedia">
+            <div class="scroll-images">
+                <div class="titleContainer">
+                    <h2>Comedia</h2>
+                </div>
+
+                <section class="genero">
+                    <div class="btnFlecha flechaIzquierda">
+                        <button class="iconob flechabtn" onclick="scrollIzquierdaComedia()">
+                            <img class="iconoi" src="Public/img/principales/izq.png" alt="" />
+                        </button>
+                    </div>
+                    <div class="pelis" id="imageComediaContainer">
+                        <figure class="imageDrama">
+                            <img
+                                src="Public/img/caratulas/peliculas/comedia/badBoys.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>Bad Boys</h3>
+                                
+                                <div class="botones">
+                                    <button class="verTrailer">
+                                        Ver Trailer
+                                    </button>
+                                    <div class="video-container">
+                                        <span class="close">X</span>
+                                        <video src="/Public/contenido/trailers/Peliculas/rushHour3.mp4" controls></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="imageDrama">
+                            <img
+                                src="Public/img/caratulas/peliculas/comedia/baywatch.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>Baywatch</h3>
+                                
+                                <div class="botones">
+                                    <button class="verTrailer">
+                                        Ver Trailer
+                                    </button>
+                                    <div class="video-container">
+                                        <span class="close">X</span>
+                                        <video src="/Public/contenido/trailers/Peliculas/ted.mp4" controls></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="imageDrama">
+                            <img
+                                src="Public/img/caratulas/peliculas/comedia/bulletTrain.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>Bullet train</h3>
+                                <div class="botones">
+                                    <button class="verTrailer">
+                                        Ver Trailer
+                                    </button>
+                                    <div class="video-container">
+                                        <span class="close">X</span>
+                                        <video src="/Public/contenido/trailers/Peliculas/baywatch.mp4" controls></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="imageDrama">
+                            <img
+                                src="Public/img/caratulas/peliculas/comedia/rideAlong.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>Ride Along</h3>
+                                <p> Los veteranos agentes Mike Lowery y Marcus Burnett vuelven a colaborar para detener a Armando Armas, el violento líder de un cartel de la droga afincado en Miami. En esta ocasión, los apoya el equipo AMMO, un grupo de élite del Departamento de Policía de Miami.
+                                </p>
+                                <div class="botones">
+                                    <button class="verTrailer">
+                                        Ver Trailer
+                                    </button>
+                                    <div class="video-container">
+                                        <span class="close">X</span>
+                                        <video src="/Public/contenido/trailers/Peliculas/badBoysForLife.mp4" controls></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="imageDrama">
+                            <img
+                                src="Public/img/caratulas/peliculas/comedia/ted.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>ted</h3>
+                                <div class="botones">
+                                    <button class="verTrailer">
+                                        Ver Trailer
+                                    </button>
+                                    <div class="video-container">
+                                        <span class="close">X</span>
+                                        <video src="/Public/contenido/trailers/Peliculas/rideAlong.mp4" controls></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="btnFlecha flechaDerecha">
+                        <button class="iconob flechabtn" onclick="scrollDerechaComedia()">
+                            <img class="iconoi" src="Public/img/principales/der.png" alt="" />
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="container" id="drama">
+            <div class="scroll-images">
+                <div class="titleContainer">
+                    <h2>Drama</h2>
+                </div>
+
+                <section class="genero">
+                    <div class="btnFlecha flechaIzquierda">
+                        <button class="iconob flechabtn" onclick="scrollIzquierdaAnimacion()">
+                            <img class="iconoi" src="Public/img/principales/izq.png" alt="" />
+                        </button>
+                    </div>
+                    <div class="pelis" id="imageAnimacionContainer">
+                        <figure class="imageDrama">
+                            <img
+                                src="Public/img/caratulas/peliculas/drama/oppenheimer.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>Oppenheimer</h3>
+                                <div class="botones">
+                                    <button class="verTrailer">
+                                        Ver Trailer
+                                    </button>
+                                    <div class="video-container">
+                                        <span class="close">X</span>
+                                        <video src="/Public/contenido/trailers/Peliculas/spiderman-IntoTheSpiderverse.mp4" controls></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="imageDrama">
+                            <img
+                                src="Public/img/caratulas/peliculas/drama/redWhiteRoyalBlue.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>Red White and Royal Blue</h3>
+                                <div class="botones">
+                                    <button class="verTrailer">
+                                        Ver Trailer
+                                    </button>
+                                    <div class="video-container">
+                                        <span class="close">X</span>
+                                        <video src="/Public/contenido/trailers/Peliculas/pussInBoots-TheLastWish.mp4" controls></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="imageDrama">
+                            <img
+                                src="/Public/img/caratulas/peliculas/drama/faultOurStars.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>The fault in our stars</h3>
+                                <div class="botones">
+                                    <button class="verTrailer">
+                                        Ver Trailer
+                                    </button>
+                                    <div class="video-container">
+                                        <span class="close">X</span>
+                                        <video src="/Public/contenido/trailers/Peliculas/spiderman-AcrossTheSpiderverse.mp4" controls></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="imageDrama">
+                            <img
+                                src="/Public/img/caratulas/peliculas/drama/joker.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>joker</h3>
+                                <div class="botones">
+                                    <button class="verTrailer">
+                                        Ver Trailer
+                                    </button>
+                                    <div class="video-container">
+                                        <span class="close">X</span>
+                                        <video src="/Public/contenido/trailers/Peliculas/encanto.mp4" controls></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="imageDrama">
+                            <img
+                                src="/Public/img/caratulas/peliculas/drama/whale.jpg"
+                                alt=""
+                            />
+                            <div class="trans">
+                                <h3>The whale</h3>
+                                <div class="botones">
+                                    <button class="verTrailer">
+                                        Ver Trailer
+                                    </button>
+                                    <div class="video-container">
+                                        <span class="close">X</span>
+                                        <video src="/Public/contenido/trailers/Peliculas/shrek.mp4" controls></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="btnFlecha flechaDerecha">
+                        <button class="iconob flechabtn" onclick="scrollDerechaAnimacion()">
+                            <img class="iconoi" src="Public/img/principales/der.png" alt="" />
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <div id="modalContent" class="modal-columns"></div>
+            </div>
+        </div>
+        
+        
+        
+
+        <footer>
+            <h2>&copy CODE_DRAGON</h2>
+            <figure class="redes">
+                <img class="red" src="/Public/img/principales/facebook.png" alt="facebook">
+                <img class="red" src="/Public/img/principales/instagram.png" alt="instagram">
+                <img class="red" src="/Public/img/principales/twitter.png" alt="twitter">
+            </figure>
+        </footer>
+    </body>
+</html>
+<script src="../../Public/js/hamburguer.js"></script>
+<script src="../../Public/js/style.js"></script>
+<script src="../Public/js/modal.js"></script>
+<script src="../../Public/js/scroll.js"></script>
+<script src="../../Public/js/buscador.js"></script>
