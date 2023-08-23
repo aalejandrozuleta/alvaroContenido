@@ -11,9 +11,27 @@ function startSlider() {
       sliderIndex = 0;
     }
     sliderContainer.style.transform = `translateX(-${sliderIndex * 100 / sliderContainer.children.length}%)`;
-  }, 2000); 
+
+    updateSuperpuesta(sliderIndex);
+  }, 2000);
 }
+
+function updateSuperpuesta(index) {
+  const superpuestas = document.querySelectorAll('.slider-logo .superpuesta');
+  superpuestas.forEach((superpuesta, i) => {
+    superpuesta.style.display = i === index ? 'block' : 'none';
+  });
+}
+
 startSlider();
+
+function updateSlider() {
+    const translateValue = -currentIndex * 9.66;
+    pelis.style.transform = `translateX(${translateValue}%)`;
+    
+    updateSuperpuesta(currentIndex);
+}
+
 
 //*
 
