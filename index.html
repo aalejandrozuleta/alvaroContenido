@@ -16,17 +16,18 @@
         <header id="navDefault">
             <nav class="principalNav">
                 <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
                     <li>
-                        <a href="/peliculas.html">Películas</a>
+                        <a href="peliculas.html">Películas</a>
                     </li>
-                    <li><a href="/series.html">Series</a></li>
+                    <li><a href="series.html">Series</a></li>
                 </ul>
             </nav>
 
-            <input id="buscador" type="text" placeholder="Buscar" />
+            <input id="buscador" class="seeker" type="text" placeholder="Buscar" onkeyup="buscarPeliculas()" />
 
 
-            <a href="/index.html">
+            <a href="index.html">
                 <img
                 id="logo"
                 src="Public/img/principales/principal.png"
@@ -51,11 +52,14 @@
             </button>
             <nav id="navBurguer">
                 <ul class="menuBurguer">
+
+                    <li><a href="#">Inicio</a></li>
+
                     <li>
-                        <a href="/peliculas.html">películas</a>
+                        <a href="peliculas.html">películas</a>
                     </li>
                     <li>
-                        <a href="/series.html">series</a>
+                        <a href="series.html">series</a>
                     </li>
                     <li>
                         <a href="#">géneros</a>
@@ -75,6 +79,7 @@
                 <div id="infoCompany">
                     <input
                         id="buscadorBurguer"
+                        class="seeker"
                         type="text"
                         placeholder="Buscar"
                     />
@@ -259,29 +264,38 @@
                 </section>
             </div>
         </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <div id="modalContent" class="modal-columns"></div>
+            </div>
+        </div>
+
+        <footer>
+            <h2>&copy CODE_DRAGON</h2>
+            <figure class="redes">
+                <img
+                    class="red"
+                    src="/Public/img/principales/facebook.png"
+                    alt="facebook"
+                />
+                <img
+                    class="red"
+                    src="/Public/img/principales/instagram.png"
+                    alt="instagram"
+                />
+                <img
+                    class="red"
+                    src="/Public/img/principales/twitter.png"
+                    alt="twitter"
+                />
+            </figure>
+        </footer>
     </body>
-    <footer>
-        <h2>&copy CODE_DRAGON</h2>
-        <figure class="redes">
-            <img
-                class="red"
-                src="/Public/img/principales/facebook.png"
-                alt="facebook"
-            />
-            <img
-                class="red"
-                src="/Public/img/principales/instagram.png"
-                alt="instagram"
-            />
-            <img
-                class="red"
-                src="/Public/img/principales/twitter.png"
-                alt="twitter"
-            />
-        </figure>
-    </footer>
 </html>
-<script src="../Public/js/style.js"></script>
-<script src="../Public/js/scroll.js"></script>
-<script src="/Public/js/modal.js"></script>
+<script src="Public/js/buscador.js"></script>
+<script src="Public/js/style.js"></script>
+<script src="Public/js/scroll.js"></script>
+<script src="Public/js/modal.js"></script>
 <script src="Public/js/hamburguer.js"></script>
