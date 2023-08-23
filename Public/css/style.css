@@ -240,7 +240,7 @@ body {
 .slider {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 450px;
     margin: 0 auto 50px;
     overflow: hidden;
     
@@ -272,11 +272,12 @@ body {
 }
 .slider .slider-container .slider-item .slider-logo{
     position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    bottom: 250px;
+    left: 50px;
+    width: 50%;
+    height: 150%;
     z-index: 100;
+
 }
 .slider .slider-container .slider-item .slider-logo img{
     margin: 0 20px;
@@ -291,6 +292,18 @@ body {
     -o-transform: translateX(-110%);
 }
 
+/* *Responsive slider-Home */
+@media screen and (max-width: 767px) {
+    .slider .slider-container .slider-item .slider-logo{
+        position: relative;
+        bottom: 150px;
+        left: 120px;
+        width: 80%;
+        height: 150%;
+        z-index: 100;
+    
+    }
+}
 /* *Estilos de tu slider */
 
 /* *Información sobre las series y películas  */
