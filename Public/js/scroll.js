@@ -1,6 +1,6 @@
 
 function updateSlider(container, currentIndex) {
-    const translateValue = -currentIndex * 9.2;
+    const translateValue = -currentIndex * 18;
     container.style.transform = `translateX(${translateValue}%)`;
 }
 

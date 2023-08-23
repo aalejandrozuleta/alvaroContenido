@@ -361,7 +361,7 @@ body {
     left: 17px;
     position: relative;
 }
-
+/* Inicio del Hover */
 .imageDrama:hover .trans {
     display: block;
 }
@@ -372,16 +372,12 @@ body {
     left: 20px;
     bottom: 20px;
     right: 20px;
-    background: rgba(0, 0, 0, 0.6);
+    background: #1d1d1db8;
     text-align: center;
     padding: 20px;
     font: 15px/25px verdana;
     color: white;
     flex-direction: column;
-}
-.trans h3 {
-    font-size: 25px;
-    margin-bottom: 35px;
 }
 .botones {
     display: flex;
@@ -390,30 +386,25 @@ body {
     align-items: center;
 }
 
+.banImageHover{
+    height: 40%;
+}
+.botones{
+    margin: 150px 0;
+}
+
 /* !Fin de películas y series */
 
 /* *Modal Trailers */
-.ver {
-    font-size: 20px;
-    height: 30px;
-    width: 70%;
-    margin: 20px 0;
-    background-color: aqua;
-    cursor: pointer;
-    border: none;
-    border-radius: 2%;
-    -webkit-border-radius: 2%;
-    -moz-border-radius: 2%;
-    -ms-border-radius: 2%;
-    -o-border-radius: 2%;
-}
+
 .verTrailer {
     font-size: 20px;
-    height: 30px;
+    height: 45px;
     width: 70%;
     border-radius: 2%;
     border: none;
-    background-color: orange;
+    color: whitesmoke;
+    background: linear-gradient(252deg, rgba(214,0,255,0.9523954845610119) 22%, rgba(9,9,121,0.8823674733565301) 39%, rgba(0,212,255,1) 78%);
     cursor: pointer;
     -webkit-border-radius: 2%;
     -moz-border-radius: 2%;
