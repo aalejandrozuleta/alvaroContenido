@@ -1,9 +1,8 @@
 function buscarPeliculas() {
-    const input = document.getElementById("buscador");
+    const input = document.getElementsByClassName(".seeker");
     const searchText = input.value.toLowerCase();
     const peliculas = document.querySelectorAll(".imageDrama h3");
     const peliculasUnicas = new Set();
-    
     peliculas.forEach((pelicula) => {
         const titulo = pelicula.textContent.toLowerCase();
         if (titulo.includes(searchText)) {
