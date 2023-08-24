@@ -1,6 +1,6 @@
 
 function updateSlider(container, currentIndex) {
-    const translateValue = -currentIndex * 18;
+    const translateValue = -currentIndex * 20;
     container.style.transform = `translateX(${translateValue}%)`;
 }
 
@@ -45,8 +45,5 @@ function scrollDerechaAnimacion() {
     animacionCurrentIndex = (animacionCurrentIndex + 1) % animacionImages.length;
     updateSlider(document.getElementById('imageAnimacionContainer'), animacionCurrentIndex);
 }
-
-
-
 
 
