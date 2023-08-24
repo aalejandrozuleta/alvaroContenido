@@ -393,7 +393,7 @@ body {
 /* !Fin de películas y series */
 
 /* *Modal Trailers */
-.ver {
+/* .ver {
     font-size: 20px;
     height: 30px;
     width: 70%;
@@ -406,7 +406,7 @@ body {
     -moz-border-radius: 2%;
     -ms-border-radius: 2%;
     -o-border-radius: 2%;
-}
+} */
 .verTrailer {
     font-size: 20px;
     height: 30px;
@@ -420,7 +420,8 @@ body {
     -ms-border-radius: 2%;
     -o-border-radius: 2%;
 }
-.video-container {
+
+/*.video-container {
     position: fixed;
     top: 16%;
     left: 10%;
@@ -482,8 +483,75 @@ body {
     -ms-transform: scale(0.4);
     -o-transform: scale(0.4);
 }
-
+*/
 /* !Modal trailers */
+
+.modalTrailer{
+    background-color: rgba(255, 255, 255, 0.199);
+    padding: 2rem;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.trailerContenido {
+    margin: auto;
+    background-color: #000;
+    border: rgb(255, 255, 255) solid 2px;
+    padding: 3em;
+    height: 100%;
+    width: 70%;
+    
+}
+
+.trailerRemove {
+    text-align: right;
+}
+
+.remove {
+    width: auto;
+    height: 30px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.trailerDescripcion {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem ;
+}
+
+.logoTrailer {
+    width: 200px;
+    height: auto;
+    margin: 1rem ;
+}
+
+.logoTrailerGrande {
+    width: 130px;
+    height: auto;
+    margin: 1rem ;
+}
+
+.trailerDetalles {
+    color: #fff;
+    margin: 1rem
+}
+
+.iframeTrailer {
+    width: 100%;
+    height: 67%;
+}
+
+
+
 /* !Paginas !!!!!!!!!!*/
 iframe {
     width: 98.5vw;

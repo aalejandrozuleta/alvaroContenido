@@ -1,15 +1,29 @@
-const modalBtns = document.querySelectorAll('.verTrailer');
-const videoContainers = document.querySelectorAll('.video-container');
-const closeBtns = document.querySelectorAll('.close');
 
-modalBtns.forEach((verTrailer, index) => {
-    verTrailer.addEventListener('click', () => {
-        videoContainers[index].classList.add('show');
-    });
-});
+document.addEventListener("DOMContentLoaded", function () {
+    const openModalButtons = document.querySelectorAll(".verTrailer");
+    const modals = document.querySelectorAll(".modalTrailer")
 
-closeBtns.forEach((close, index) => {
-    close.addEventListener('click', () => {
-        videoContainers[index].classList.remove('show');
+    openModalButtons.forEach(button =>{
+        button.addEventListener("click", function () {
+            const modalId = button.getAttribute("data-modal");
+            const modal = document.getElementById(modalId);
+            modal.style.display = "block";
+
+            const closeButton = modal.querySelector(".remove");
+            closeButton.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+        });
     });
+
+    modals.forEach(modal => {
+        modal.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none"
+            }
+            
+        });
+    });
+
+
 });
