@@ -398,8 +398,31 @@ body {
 .imageDrama:hover .trans {
     display: block;
 }
-.trans {
+
+.imageDrama .trans {
     display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 25px;
+    right: 20px;
+    text-align: center;
+    padding: 0px;
+    font: 15px/5px verdana;
+    z-index: 1;
+}
+
+
+.verTrailer{
+    width: 100px;
+    height: 30px;
+}
+#botonGato{
+    margin-top: 100px;
+}
+
+.trans {
+    display: block;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -421,8 +444,8 @@ body {
 .banImageHover{
     height: 40%;
 }
-.botones{
-    margin: 150px 0;
+.botones {
+    margin: 73px 0;
 }
 /* !Fin de películas y series */
 .wordMovie{
