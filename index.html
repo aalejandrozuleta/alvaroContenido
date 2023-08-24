@@ -149,7 +149,7 @@
                                     <img src="Public/img/Logos/peliculas/drama/redWhiteRoyalBlue.png" alt="">
                                 </figure>
                                 <div class="botones">
-                                    <button class="verTrailer">
+                                    <button class="verTrailer" data-modal="modalTrailer12">
                                         Ver más...
                                     </button>
                                 </div>
@@ -165,16 +165,10 @@
                                     <img src="Public/img/Logos/peliculas/animacion/spiderManAcross.png" alt="">
                                 </figure>
                                 <div class="botones">
-                                    <button class="verTrailer">
+                                    <button class="verTrailer" data-modal="modalTrailer2">
                                         Ver más...
                                     </button>
-                                    <div class="video-container">
-                                        <span class="close">X</span>
-                                        <video
-                                            src="/Public/contenido/trailers/Peliculas/ted.mp4"
-                                            controls
-                                        ></video>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </figure>
@@ -188,16 +182,10 @@
                                     <img src="Public/img/Logos/series/drama/gameThrones.png" alt="">
                                 </figure>
                                 <div class="botones">
-                                    <button class="verTrailer">
+                                    <button class="verTrailer" data-modal="modalTrailer26">
                                         Ver más...
                                     </button>
-                                    <div class="video-container">
-                                        <span class="close">X</span>
-                                        <video
-                                            src="/Public/contenido/trailers/Peliculas/baywatch.mp4"
-                                            controls
-                                        ></video>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </figure>
@@ -211,16 +199,10 @@
                                     <img src="Public/img/Logos/series/drama/lastOfUs.png" alt="">
                                 </figure>
                                 <div class="botones">
-                                    <button class="verTrailer">
+                                    <button class="verTrailer" data-modal="modalTrailer30">
                                         Ver Trailer
                                     </button>
-                                    <div class="video-container">
-                                        <span class="close">X</span>
-                                        <video
-                                            src="/Public/contenido/trailers/Peliculas/badBoysForLife.mp4"
-                                            controls
-                                        ></video>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </figure>
@@ -234,16 +216,10 @@
                                     <img src="Public/img/Logos/series/animacion/rickMorty.png" alt="">
                                 </figure>
                                 <div class="botones">
-                                    <button class="verTrailer">
+                                    <button class="verTrailer" data-modal="modalTrailer18">
                                         Ver más...
                                     </button>
-                                    <div class="video-container">
-                                        <span class="close">X</span>
-                                        <video
-                                            src="/Public/contenido/trailers/Peliculas/rideAlong.mp4"
-                                            controls
-                                        ></video>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </figure>
@@ -265,10 +241,58 @@
             </div>
         </div>
 
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="cerrarModal()">&times;</span>
-                <div id="modalContent" class="modal-columns"></div>
+        <div class="modalTrailer" id="modalTrailer12">
+            <div class="trailerContenido">
+                <figure class="trailerRemove"><img class="remove" src="Public/img/principales/remove.png" alt=""></figure>
+                <div class="trailerDescripcion">
+                    <figure class="trailerLogo"> <img class="logoTrailer" src="Public/img/Logos/peliculas/drama/redWhiteRoyalBlue2.png" alt=""></figure>
+                    <p class="trailerDetalles">Tras la elección de su madre como presidente, el joven Alex Claremont-Diaz (Pérez) es rápidamente elegido como el equivalente estadounidense de un joven miembro de la realeza.</p>
+                </div>
+                <iframe class="iframeTrailer" width="560" height="315" src="https://www.youtube.com/embed/_DF0Ejz-xB0" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="modalTrailer" id="modalTrailer2">
+            <div class="trailerContenido">
+                <figure class="trailerRemove"><img class="remove" src="Public/img/principales/remove.png" alt=""></figure>
+                <div class="trailerDescripcion">
+                    <figure class="trailerLogo"> <img class="logoTrailer" src="Public/img/Logos/peliculas/animacion/spiderManAcross.png" alt=""></figure>
+                    <p class="trailerDetalles">Miles Morales se embarca en una emocionante aventura a través del multiverso y une fuerzas con Gwen Stacy y Spider-People para luchar contra un supervillano.</p>
+                </div>
+                <iframe class="iframeTrailer" width="560" height="315" src="https://www.youtube.com/embed/cMwNb7v_v9k " frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="modalTrailer" id="modalTrailer26">
+            <div class="trailerContenido">
+                <figure class="trailerRemove"><img class="remove" src="Public/img/principales/remove.png" alt=""></figure>
+                <div class="trailerDescripcion">
+                    <figure class="trailerLogo"> <img class="logoTrailer" src="Public/img/Logos/series/drama/gameThrones.png" alt=""></figure>
+                    <p class="trailerDetalles">En un mundo fantástico y en un contexto medieval varias familias, relativas a la nobleza, se disputan el poder para dominar el territorio ficticio de Poniente (Westeros) y tomar el control de los Siete Reinos desde el Trono de Hierro, lugar donde el rey ejerce el poder.</p>
+                </div>
+                <iframe class="iframeTrailer" width="560" height="315" src="https://www.youtube.com/embed/TZE9gVF1QbA" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="modalTrailer" id="modalTrailer30">
+            <div class="trailerContenido">
+                <figure class="trailerRemove"><img class="remove" src="Public/img/principales/remove.png" alt=""></figure>
+                <div class="trailerDescripcion">
+                    <figure class="trailerLogo"> <img class="logoTrailer" src="Public/img/Logos/series/drama/lastOfUs2.png" alt=""></figure>
+                    <p class="trailerDetalles">Joel, uno de los pocos sobrevivientes, es contratado para sacar de contrabando a Ellie, una niña de 14 años, fuera de una opresiva zona de cuarentena. Lo que pareciera ser un pequeño trabajo, se convierte en un viaje brutal y desgarrador</p>
+                </div>
+                <iframe class="iframeTrailer" width="560" height="315" src="https://www.youtube.com/embed/8SWhBsbxmpk" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="modalTrailer" id="modalTrailer18">
+            <div class="trailerContenido">
+                <figure class="trailerRemove"><img class="remove" src="Public/img/principales/remove.png" alt=""></figure>
+                <div class="trailerDescripcion">
+                    <figure class="trailerLogo"> <img class="logoTrailer" src="Public/img/Logos/series/animacion/rickMorty.png" alt=""></figure>
+                    <p class="trailerDetalles">Rick Sánchez es un genio científico alcohólico que se ha mudado con la familia de su hija Beth. Él pasa el tiempo con su nieto adolescente Morty (y en ocasiones con otros miembros de la familia) en aventuras peligrosas y surrealistas a través del espacio y universos paralelos.</p>
+                </div>
+                <iframe class="iframeTrailer" width="560" height="315" src="https://www.youtube.com/embed/T_QAxvPjjBc" frameborder="0"></iframe>
             </div>
         </div>
 
